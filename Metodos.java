@@ -18,11 +18,20 @@ public class Metodos {
     public int[] creatArray(){  
        int x =Integer.parseInt(JOptionPane.showInputDialog(null, "Tamaño Array"));
         int boletin18[] = new int[x];        
+        String boletin18_nomes[] = new String[x];        
         for(int i=0;i<boletin18.length;i++){
-            int y = (int) (Math.random()*((10-0)+1));
+            int y = (int) (Math.random()*((10-0)+1));            
             boletin18[i]=y;
         }
     return boletin18;
+    }
+    public String[] creatArrayNombres(){  
+        int x =Integer.parseInt(JOptionPane.showInputDialog(null, "Tamaño Array")); 
+        String boletin18_nomes[] = new String[x];        
+        for(int i=0;i<boletin18_nomes.length;i++){
+              boletin18_nomes[i]=PedirString("Nombre Alumno");
+        }
+    return boletin18_nomes;
     }
     public void showArray(int[] p_array,char p_comprobar){   
        //variables
@@ -76,6 +85,24 @@ public class Metodos {
            }
         return v_nota;
     }
+    
+     public String PedirString(String mensaxe){        
+           return JOptionPane.showInputDialog(mensaxe);                                               
+    }
+     
+     public void showNota(String[] p_array,int[] p_arrayNota,String p_alumno){
+     
+     for(int i=0;i<p_array.length;i++){
+         
+         if (p_array[i] == null ? p_alumno == null : p_array[i].equals(p_alumno)){
+             
+             System.out.println(p_arrayNota[i]);
+         }
+     
+     }
+         
+         
+     }
    
     
     

@@ -11,8 +11,14 @@ package boletin18_2;
  */
 public class Boletin18_2 {      
     public static void main(String[] args) {
-         Metodos obj = new Metodos();
-                obj.showArray(obj.creatArray(),'S');
-        
+  
+        Metodos obj = new Metodos();
+        obj.showArray(obj.creatArray(),'S');
+         String boletin18_nomes[] = new String[30];
+            boletin18_nomes =creatArrayNombres();
+        obj.showNota(, creatArray(),"jose");
+
+                
+                
     }    
 }
