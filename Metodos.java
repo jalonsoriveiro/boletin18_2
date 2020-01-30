@@ -29,8 +29,7 @@ public class Metodos {
        int acumuladorAprobados=0;
        int acumuladorSuspensos=0;
        int acumuladorMediaAlumnos=0;
-       int notaMedia=0;
-       int notaMasAlta=0;
+       int notaMedia=0;       
                 
         for(int i=0;i<p_array.length;i++){
             System.out.println(p_array[i]);                    
