@@ -88,7 +88,7 @@ public class Metodos {
         return v_nota;
     }
     
-     public String PedirString(String mensaxe){        
+     public static String PedirString(String mensaxe){        
            return JOptionPane.showInputDialog(mensaxe);                                               
     }
      
@@ -142,7 +142,5 @@ public class Metodos {
        int num=(int)Math.floor(Math.random()*(maximo-minimo+1)+(minimo));
        return num;
    }
-   
-    
-    
+           
 }
