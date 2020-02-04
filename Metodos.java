@@ -61,14 +61,14 @@ public class Metodos {
         }
     }
     public int calAprob(int nota){          
-            if (nota >=5){   
+            if (nota >5){   
                 return 1;
             }else{
                 return 0;
         }
     }
     public int calSup(int nota){          
-            if (nota <=5){   
+            if (nota <5){   
                 return 1;
             }else{
                 return 0;
@@ -102,12 +102,14 @@ public class Metodos {
      }
      }  
         public void showAprob(String[] p_array_nomes,int[] p_arrayNota){
-     
+        String[] boletin18_Aprobados= new String [p_arrayNota.length];
+        int j = 0;
      for(int i=0;i<p_array_nomes.length;i++){
          
          if (calAprob(p_arrayNota[i])==1){
-             
-             System.out.println(p_array_nomes[i]);
+             j++;
+             boletin18_Aprobados[j]=p_array_nomes[i];
+        
          }
      
      }  

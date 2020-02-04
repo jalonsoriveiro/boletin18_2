@@ -15,10 +15,9 @@ public class Boletin18_2 {
     public static void main(String[] args) {
         boolean repetir=true;    
         
-        Metodos obj = new Metodos();
+            Metodos obj = new Metodos();
             String boletin18_nomes[]=obj.creatArrayNombres();
-               int boletin18[]=obj.creatArray();
-    
+               int boletin18[]=obj.creatArray();    
        do  {       
         int option   = Integer.parseInt(JOptionPane.showInputDialog(null, "Menu: \n"
              + "1)Crear Array y mostrar Aprobados y suspensos \n"
