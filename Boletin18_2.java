@@ -59,7 +59,7 @@ public class Boletin18_2 {
         case 6:               
                 repetir=false;                                
         }
-        }while(true==repetir);
+        }while(repetir==true);
                
        }
 

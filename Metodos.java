@@ -17,8 +17,7 @@ public class Metodos {
     
     public int[] creatArray(){  
        int x =Integer.parseInt(JOptionPane.showInputDialog(null, "Tamaño Array notas"));
-        int boletin18[] = new int[x];        
-        String boletin18_nomes[] = new String[x];        
+        int boletin18[] = new int[x];               
         for(int i=0;i<boletin18.length;i++){            
          int  y=generaNumeroAleatorio(0,10);
             boletin18[i]=y;
@@ -99,8 +98,7 @@ public class Metodos {
          if (p_array_nomes[i] == null ? p_alumno == null : p_array_nomes[i].equals(p_alumno)){
              
              System.out.println(p_arrayNota[i]);
-         }
-     
+         }     
      }
      }  
         public void showAprob(String[] p_array_nomes,int[] p_arrayNota){
